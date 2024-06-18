@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    color: rgb(212, 168, 111);
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(212, 168, 111);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(212, 168, 111);
+}
+
+.monte-carlo {
+    margin-top: 30px;
+}
+
+.monte-carlo h2 {
+    color: rgb(212, 168, 111);
+    margin-bottom: 10px;
+}
+
+#resultArea {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calculator</title>
+    <style src=“styless.css”></style>
+    <style>
+        body {
+            background-color: #dcdcdc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Math Calculator</h1>
+        <div class="form-group">
+            <label for="calcType">Calculation Type:</label>
+            <select id="calcType">
+                <option value="birthday">Birthday Problem</option>
+                <option value="permutasi">Permutasi</option>
+                <option value="kombinasi">Kombinasi</option>
+                <option value="ev">Expected Value</option>
+                <option value="bit">Bit Probability</option>
+                <option value="Teorema Bayes">Teorema Bayes</option>
+            </select>
+        </div>
+
+        <div id="inputNContainer" class="form-group">
+            <label for="inputN">N:</label>
+            <input type="number" id="inputN">
+        </div>
+
+        <div id="inputRContainer" class="form-group hidden">
+            <label for="inputR">R:</label>
+            <input type="number" id="inputR">
+        </div>
+
+        <div id="inputPContainer" class="form-group hidden">
+            <label for="inputP">P:</label>
+            <input type="number" step="0.01" id="inputP">
+        </div>
+
+        <div id="inputBitContainer" class="form-group hidden">
+            <label for="inputBit">Bit:</label>
+            <input type="number" id="inputBit" min="0" max="1">
+        </div>
+
+        <div id="inputComplementOutcomesContainer" class="form-group hidden">
+            <label for="inputComplementOutcomes">Complement Outcomes:</label>
+            <input type="number" id="inputComplementOutcomes">
+        </div>
+
+        <button id="calculateButton">Calculate</button>
+        <div id="resultArea"></div>
+
+        <div class="monte-carlo">
+            <h2>Monte Carlo Pi Calculation</h2>
+            <div class="form-group">
+                <label for="iterations">Iterations:</label>
+                <input type="number" id="iterations" value="10000">
+            </div>
+            <button id="calculatePiButton">Calculate Pi</button>
+            <div id="piResult"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
